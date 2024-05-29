@@ -1,0 +1,33 @@
+.left__pannel{
+    display: flex;
+    flex-direction: column;
+    height:72vh;
+    /* justify-content: space-evenly; */
+}
+.left__main{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: rgb(219, 226, 227);
+    border-radius: 5px;
+}
+.left__main:hover{
+  
+    background-color: rgb(250, 250, 250);
+    border-radius: 5px;
+    padding: 1%;
+    opacity:0.9px;
+    border:1px solid black;
+    margin-right:5px;
+}
+
+.icon__size{
+    font-size: 28px;
+}
+.icon__padding{
+padding-left: 10px;
+}
+.left__main > span{
+    padding: 4%;
+}

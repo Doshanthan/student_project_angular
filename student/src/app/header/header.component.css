@@ -1,0 +1,25 @@
+.header{
+    background-color:var(--primaryColor);
+    height: 10vh;
+    position:sticky;
+    top:0;
+    justify-content: space-between;
+    padding-left:1%;
+    padding-right: 10%;
+}
+.header__menu > span
+{
+    padding-left: 10px;
+    cursor: pointer;
+}
+.header__menu img{
+    width: 40px;
+    height: 40px;
+}
+.header__notification > span 
+{
+    padding-right: 10px;
+}
+/* .pa{
+    padding-right:50px;
+} */

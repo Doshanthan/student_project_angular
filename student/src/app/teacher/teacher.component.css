@@ -1,0 +1,136 @@
+.header{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-between;
+    padding:2vh;
+    background-color: rgb(143, 142, 190);
+}
+.title{
+    font-size: large;
+    font-weight:bold;
+    border: 1px sold black;
+    
+
+}
+.addbutton{
+    background-color: var(--primary);
+    padding: 4px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    border: 1px sold black;
+    background-color: rgb(255, 206, 127);
+    margin-right: 60px;
+    cursor: pointer;
+}   
+.list
+{
+    background-color: rgb(241, 241, 241);
+    /* /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center;  */
+}
+
+.table >tr>th,td {
+    padding-left:1.6vw;
+    padding-right:1.6vw;
+    padding-top:0.5%;
+    padding-bottom: 0.5%;
+    border: 1px solid black;
+}
+.list_edit{
+    background-color: rgb(19, 222, 16);
+    cursor: pointer;
+}
+.list_delect{
+    background-color: rgb(235, 12, 12);
+    cursor: pointer;
+}
+/* th,td{
+    border: 1px solid black;
+    padding: 10px;
+
+} */
+
+.button_alaign
+{
+    padding:5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+
+.students__add__new
+{
+     background-color: rgb(241, 241, 241);
+}
+.form__row1 {
+    display: flex;
+    width: 100%;
+}
+.form__row2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.form__row2 > button {
+    padding:1vw;
+    padding-bottom: 2vh;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 5px;
+}
+.form__data {
+    width: 70%;
+}
+.form__data > form > table {
+    width: 100%;
+}
+.form__data > form > table > tr > td:nth-child(1) {
+    text-align: left;
+    padding-right: 8px;
+    width:25%;
+}
+.form__data > form > table > tr > td:nth-child(2) {
+    /* width:100%; */
+    text-align: left;
+}
+.form__data > form > table > tr > td > span {
+    font-size: large;
+    width: 30%;
+}
+
+.form__input {
+    padding: 8px;
+    width: 70%;
+    /* text-align: center; */
+    align-items: left;
+}
+
+.form__img {
+   display: flex;
+   flex-direction: column; 
+   width: 10%;
+   padding-top: 5%;
+   padding-left: 30;
+   padding-left: 10%;
+}
+.form__img button{
+    margin-bottom:10%;
+}
+table>tr>td> input,textarea,select{
+    border-radius: 5px;
+}
+.b1{
+    background-color: rgb(12, 226, 19);
+}
+.b2{
+    background-color: rgb(38, 22, 219);
+}
+.b3{
+    background-color: rgb(233, 31, 16);
+}

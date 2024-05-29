@@ -1,0 +1,8 @@
+.footer{
+    height: 10vh;
+    background-color:var(--primaryColor);
+    width: 100%;
+    bottom: 0;
+    position:absolute;
+    color: white;
+}

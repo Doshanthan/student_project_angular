@@ -1,0 +1,31 @@
+*{
+    margin:0%;
+    padding:0%;
+
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+  
+}
+:root{
+    --primaryColor :rgb(0, 0, 0);
+    /* --primaryColor:rgb(127, 127, 171); */
+}
+
+.display__flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.color
+{
+    color:white
+}
+.icon__textsize{
+    font-size: 28px;
+}
+
+

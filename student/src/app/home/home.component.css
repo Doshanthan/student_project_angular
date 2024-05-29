@@ -1,0 +1,33 @@
+.home{
+    display:flex;
+    /* padding-top: 4vh;
+    padding-bottom: 4vh;
+    padding-right: 4vh;
+    padding-left: 1vh; */
+    background-color: rgb(219, 226, 227);
+    height: 90%;
+    padding: 2vh;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: relative;
+    
+
+}
+.left__pannel__sup1{
+    width:18%;
+    /* background-color: rgb(161, 226, 232); */
+    /* background-color:gray; */
+}
+.right__pannel__sup2{
+    width:82%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.left_mini{
+    width: 10%;
+}
+.right_mini{
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    }

@@ -1,0 +1,13 @@
+<div class="header display__flex color">
+    <div class="header__menu display__flex">
+        <span *ngIf="!mainService.isMinimized" class="material-symbols-outlined" (click)="mainService.minimizedToggle()">menu</span>
+        <span *ngIf="mainService.isMinimized" class="material-symbols-outlined" (click)="mainService.minimizedToggle() ">menu_open</span>
+        <img src="../../assets/img.png" alt="img1"/>
+    </div>
+    <div class="header__notification">
+        <span class="material-symbols-outlined">search</span>
+        <span class="material-symbols-outlined">notifications</span>
+        <span class="material-symbols-outlined">account_circle</span>
+    </div>
+
+</div>

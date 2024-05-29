@@ -1,0 +1,124 @@
+<div class="student">
+    <div *ngIf="studentService.isAddNew" class="student_list">
+        <div class="header">
+                <div class="title">
+                    Student main details 
+                </div>
+                <div class="option">
+                        <button class="addbutton" (click)="studentService.addnew()">  
+                            <span class="material-symbols-outlined"> add</span>
+                            Add new
+
+                        </button>
+                </div>
+        </div>
+
+        <div class="list">
+            <table class="table">
+                <tr>
+                    <th>id</th>
+                    <th>first name</th>
+                    <th>last name</th>
+                    <th>dob</th>
+                    <th>address</th>
+                    <th>district</th>
+                    <th>gender</th>
+                    <th>contact no</th>
+                    <th>grade</th>
+                    <th>option</th>
+                </tr>
+             
+                <tr *ngFor="let item of studentService.studentList; let i = index">
+                    <td>{{item.id}}</td>
+                    <td>{{item.first_name}}</td>
+                    <td>{{item.last_name}}</td>
+                    <td>{{item.dob}}</td>
+                    <td>{{item.address}}</td>
+                    <td>{{item.district}}</td>
+                    <td>{{item.gender}}</td>
+                    <td>{{item.contact_no}}</td>
+                    <td>{{item.grade}}</td>
+                    <td><button  class="button_alaign list_edit"(click)="studentService.editStudent(i)">Edit</button><button class="button_alaign list_delect" (click)="studentService.deleteStudent(i)">delete</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+
+    <div *ngIf="!studentService.isAddNew" class="students__add__new">
+
+        <div class="form__row1">
+            <div class="form__data">
+                <form>
+                    <table class="add_table">
+                        <tr>
+                            <td><span>First Name: </span></td>
+                            <td><input type="text" class="form__input" [(ngModel)]="studentService.studentObj.first_name" [ngModelOptions]="{standalone: true}"/></td>
+                        </tr>
+
+                        <tr>
+                            <td><span>Last Name: </span></td>
+                            <td><input type="text"  class="form__input"  [(ngModel)]="studentService.studentObj.last_name" [ngModelOptions]="{standalone: true}"/></td>
+                        </tr>
+
+                        <tr>
+                            <td><span>DOB: </span></td>
+                            <td><input type="date" class="form__input"  [(ngModel)]="studentService.studentObj.dob" [ngModelOptions]="{standalone: true}"/></td>
+                        </tr>
+                        <tr>
+                            <td><span>Gender: </span></td>
+                            <td>
+                                <select class="form__input"  [(ngModel)]="studentService.studentObj.gender" [ngModelOptions]="{standalone: true}">
+                                    <option [value]="null" [disabled]="true" [selected]="true">Select gender</option>
+                                    <option *ngFor="let gender of mainService.genders" [value]="gender.list_vale">{{gender.list_vale}}</option>
+                                    <!-- <option>Prefer not to say</option> -->
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span>Address: </span></td>
+                            <td><textarea class="form__input"  [(ngModel)]="studentService.studentObj.address" [ngModelOptions]="{standalone: true}"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><span>District: </span></td>
+                            <td>
+                                <select type="text" id="district" name="district" class="form__input" [(ngModel)]="studentService.studentObj.district" required>                      
+                                    <option [value]="null" [disabled]="true" [selected]="true">Select district</option>   
+                                    <!-- <option *ngFor="let district of dictricts" [value]="district.id">{{district.list_value}}</option> -->
+                                    <option *ngFor="let district of mainService.dictricts" [value]="district.list_value">{{district.list_value}}</option>
+                                  </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span>Contact No: </span></td>
+                            <td><input type="text"  class="form__input" [(ngModel)]="studentService.studentObj.contact_no" [ngModelOptions]="{standalone: true}"/></td>
+                        </tr>
+                        <tr>
+                            <td><span>Grade: </span></td>
+                            <td><select class="form__input"  [(ngModel)]="studentService.studentObj.grade" [ngModelOptions]="{standalone: true}">
+                                <option [value]="null" [disabled]="true" [selected]="true">Select gender</option>
+                                <option *ngFor="let grade of mainService.grades" [value]="grade.list_vale">{{grade.list_vale}}</option>
+                                <!-- <option>Prefer not to say</option> -->
+                            </select>
+                        </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div class="form__img">
+                <img src="../../assets/img2.png" alter ="img/">
+                <button>Add Picture</button>
+            </div>
+
+        </div>
+
+        <div class="form__row2">
+            <button class= "b1" (click)="studentService.saveStudent()">Save</button>
+            <button class="b2">Cancel</button>
+             <button class="b3"(click)="studentService.addnew()">Close</button>
+        </div>
+    </div> 
+    
+
+</div>
